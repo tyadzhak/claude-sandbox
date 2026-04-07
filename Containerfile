@@ -23,5 +23,4 @@ RUN useradd -m -u 1000 claude
 USER claude
 WORKDIR /workspace
 
-ENTRYPOINT ["claude"]
-CMD ["--dangerously-skip-permissions"]
+ENTRYPOINT ["/bin/bash"]
