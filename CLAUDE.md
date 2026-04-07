@@ -6,8 +6,6 @@ A Podman-based sandbox for running Claude Code in an isolated container.
 
 - `Containerfile` — Fedora 41 image with Node.js, Claude Code, and dev tools
 - `claude-sandbox.sh` — Main entry script: builds image, runs container with project mounted
-- `setup.sh` — One-time script to create a GitHub repo and push
-
 ## Key design decisions
 
 - **Named Podman volume** (`claude-sandbox-home`) persists `/home/claude` across runs so login credentials, config, and cache survive container restarts

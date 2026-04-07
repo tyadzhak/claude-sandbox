@@ -61,12 +61,3 @@ Credentials are stored in the `claude-sandbox-home` Podman volume. To reset:
 podman volume rm claude-sandbox-home
 ```
 
-## Initial setup (optional)
-
-To push this repo to GitHub:
-
-```bash
-./setup.sh
-```
-
-Requires [GitHub CLI](https://cli.github.com/) (`gh`).
